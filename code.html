@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyPage</title>
+        <style>
+
+
+/* BOTTOM CONTECT BLOCK */
+.full-width-div {
+  background-color: rgb(110, 196, 144);
+  height: 150px;
+  border-radius: 15px;
+  margin: 2px;
+}
+
+.full-width-div,
+#contact-info h4 {
+  color: black !important;
+}
+
+#contact-info {
+  margin-top: -15px;
+}
+
+#contact-info h4 {
+  margin-bottom: -12px !important; /* Adjust the margin-bottom as needed */
+}
+
+
+
+
+/* HOME MENU  TEXT'S */
+          .topname h3 {
+              color: rgb(255, 255, 255);
+          }
+  
+          
+  
+          
+  /*FOR EDUCATION HOVER EFFECT BUTTONS */
+          .tab button.active {
+              background-color: #f6b4b4;
+              color: rgb(0, 0, 0);
+              border-color: black;
+          }
+  
+          .tabcontent0 {
+            
+              border: #000000 1px;
+              
+              display: none;
+          }
+          .tabcontent1 {
+            height: auto;
+              border: #000000 1px;
+              display: none;
+          }
+          .tabcontent2 {
+            
+              border: #000000 1px;
+              display: none;
+          }
+  
+          .tablinks {
+              height: 60px;
+              width: 200px;
+              border-radius: 12px;
+              border: 1.5px solid #fffefe;
+              background-color: #000000;
+              color: rgb(255, 255, 255);
+          }
+  
+          .tablinks:hover {
+              box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.685), 0 17px 50px 0 rgb(0, 0, 0);
+          }
+  
+          .box {
+              text-align: center;
+              border-style: solid;
+              border-width: 1.5px;
+              border-radius: 25px;
+              height: 200px;
+              width: 95%;
+              margin-top: 20px;
+              margin-left: 20px;
+              margin-right: 20px;
+          }
+  
+         
+  
+          .project_info {
+              margin-right: 50px;
+              margin-left: 50px;
+              width: 40%;
+              height: 200px;
+              border-radius: 30px;
+              text-align: center;
+              display: flex;
+              padding-left: 30px;
+              align-items: center;
+          }
+  
+          .project_infoo {
+              margin-right: 50px;
+              margin-left: 50px;
+              width: 42%;
+              height: 200px;
+              border-radius: 30px;
+          }
+  
+          .projects {
+              display: block;
+              margin-top: -1px;
+              margin-bottom: 30px;
+          }
+  
+          .tabcontent {
+              border: 1px solid #00000000;
+              width: auto;
+          }
+
+
+
+   
+
+
+
+          
+
+          .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .color-block {
+  
+  cursor: pointer;
+  transition: filter 0.3s;
+  
+}
+
+
+        .color-block:hover {
+            filter: brightness(90%);
+            z-index: 2;
+        }
+
+        .block1 { background-color: #acdeff; }
+        .block2 { background-color: #acffc5; }
+        .block3 { background-color: #b6acff; }
+        .block4 { background-color: #ffacac; }
+
+        .popup {
+          display: none;
+          z-index: 1; /*for front or back overlap*/
+          transform: translate(0px ,0px) ; /*for to x and y axis movements*/
+          
+
+
+            position: absolute;
+            
+            
+            
+            
+            
+          
+            
+            
+            
+            
+            
+        }
+
+
+
+        .popup1 { background-color: #acdeff; width: 99%;height: 200px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px;margin-left: 1%;border-top-left-radius: 0px; }
+        .popup2 { background-color: #acffc5; width: 99%;height: 200px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px; margin-left: 1%;}
+        .popup3 { background-color: #b6acff; width: 99%; height: 200px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px;margin-left: 1%; }
+        .popup4 { background-color: #ffacac; width: 98%; height: 200px ; margin-top: -2px;border-radius: 10px;border:#000000 solid 2px;
+          border-top-right-radius: 0px;margin-left: 1%;}
+
+
+          
+
+        
+        
+
+
+
+
+
+
+
+
+        * {box-sizing: border-box}
+
+
+/* Style the tab */
+.tabz {
+  float:right;
+  
+ 
+  width: 25%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tabz p {
+  border: #000000 solid 1px;
+  border-radius:20px;
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+/* Create an active/current "tab button" class */
+.tabz p.active {
+  background-color: #fae6e6;
+}
+
+/* Style the tab content */
+.tabcontentz {
+  float: left;
+  padding: 0px 12px;
+  width: 75%;
+  border-left: none;
+  display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+      
+   
+
+
+
+
+
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  height: 75px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  top: 0px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 1000; /* Set a higher z-index value */
+}
+
+
+#navbar a {
+  
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mySlides {display: none}
+.block {
+  width: 200%;
+  height: 200px;
+  border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    top: 10px;
+  max-width: 95%;
+  position: relative;
+  margin: auto;
+  overflow: hidden; /* Added to hide overflow */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .parallax-container {
+            height: 300px; /* Adjust the height based on your design */
+            background: url('https://www.nme.com/wp-content/uploads/2021/06/monsta-x-im-starhip-entertainment-facebook-150621-e1623750568695-1392x884.jpg') fixed;
+            
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parallax-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%, -50%);
+            color: #fff; /* Adjust text color based on your background */
+        }
+
+
+        .parallax-container1 {
+            height: 300px; /* Adjust the height based on your design */
+            background: url('https://assets.teenvogue.com/photos/602fe0c9313b90887aae7db3/16:9/w_1920,c_limit/collage%20(6).jpg') fixed;
+            
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parallax-content1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%, -50%);
+            color: #fff; /* Adjust text color based on your background */
+        }
+
+
+        .parallax-container2 {
+            height: 300px; /* Adjust the height based on your design */
+            background: url('https://www.nme.com/wp-content/uploads/2021/06/monsta-x-im-starhip-entertainment-facebook-150621-e1623750568695-1392x884.jpg') fixed;
+            
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parallax-content2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%, -50%);
+            color: #fff; /* Adjust text color based on your background */
+        }
+
+
+
+
+
+
+
+
+        
+    .intro {
+        display: flex;
+        
+    }
+    .intro
+    .intro-info{
+      margin-top: 13%;
+      margin-right: 100px;
+      font-size: 12px;
+    }
+
+
+    .intro > div {
+        flex: 1;
+        margin: 10px;
+        
+    }
+
+    
+
+    .intro img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 13%;
+        margin-left: 3px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .intro {
+            flex-direction: column;
+        }
+
+        .intro > div {
+            margin: 10px 0;
+        }
+
+        .intro > div:nth-child(2) {
+            margin-top: 0px;
+            margin-right: 0px; /* Adjust the value as needed */
+        }
+
+    }
+
+
+    /*CODING PROFILE PICS HOVER EEFFECT*/
+    .social-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.zoom-out {
+    transition: transform 0.4s ease-out;
+}
+
+.zoom-out:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+
+
+
+   
+</style>
+
+
+
+
+
+        
+
+
+    
+
+
+
+    
+
+
+    </head>
+    <body>
+
+      <div style="display: flex" class="intro">
+        <div>
+            <img src="colour_passport_pic.png" alt="Passport Photo" >
+        </div>
+    
+        <div class="intro-info"style="display: block;">
+            <div>
+                <h1 style="margin-left: 15px;">
+                    My name is Gummadi Charan,
+                    and I am passionate about the field of Information Technology.
+                    With a strong background in IT, I am eager to join your esteemed company.
+                    My goal is to contribute to our business's growth by leveraging my skills and expertise,
+                    while also continuously learning and adapting to the ever-evolving landscape of technology.
+                </h1>
+            </div>
+    
+            <div class="social-links">
+              <a href="https://github.com/charan1911" class="zoom-out"><img width="60px" src="github.png" alt="GitHub"></a>
+              <a href="https://www.linkedin.com/in/charan-gummadi-95047121b/" class="zoom-out"><img width="60px" src="linkedin.png" alt="LinkedIn"></a>
+              <a href="https://www.codechef.com/users/charan_1119" class="zoom-out"><img width="60px" src="codechef.png" alt="CodeChef"></a>
+              <a href="https://www.hackerrank.com/profile/20951a1216" class="zoom-out"><img width="60px" src="hackerrank.png" alt="HackerRank"></a>
+              <a href="https://leetcode.com/Gummadi_Charan/" class="zoom-out"><img width="60px" src="leetcode.png" alt="LeetCode"></a>
+          </div>
+          
+        </div>
+    </div>
+    
+
+
+
+
+        <div id="navbar" style="background-color: rgb(71, 8, 8);">
+            <div class="topname" style="display: flex; justify-content: space-between; ">
+                <div align="center"><img src="profile.png" style="width: 30px;height: 30px;margin-top: 10px;"><h5 style="margin: 0px;padding: 0px;margin-left: 8px;color: white;">PROFILE</h5></div>
+                <div style="display: flex; justify-content: space-between;">
+                  <div align="center" style="margin-right: 30px;"><img src="home.png" style="width: 30px;height: 30px;margin-top: 10px;margin-left: 5px;"><h5 style="margin: 0px;padding: 0px;margin-left: 3px;color: white;">HOME</h5></div>
+                  <div align="center" style="margin-right: 30px;"><img src="about_us.png" style="width: 30px;height: 30px;margin-top: 10px;margin-left: 14px;"><h5 style="margin: 0px;padding: 0px;margin-left: 3px;color: white;">ABOUT US</h5></div>
+                  <div align="center" ><img src="contact_us.png" style="width: 30px;height: 30px;margin-top: 10px;margin-left: 14px;"><h5 style="margin: 0px;padding: 0px;margin-left: 3px;color: white;">CONTACT US</h5></div>
+                </div>
+                
+                <div align="center" style="margin-right: 15px;"><img src="log_out.png" style="width: 30px;height: 30px;margin-top: 10px;margin-left: 14px;"><h5 style="margin: 0px;padding: 0px;margin-left: 3px;color: white;">LOG OUT</h5></div>
+            </div> 
+        </div> 
+        
+      
+        
+        <div align="center" style="margin-top: 25px;background-color: rgb(71, 8, 8);color: rgb(255, 255, 255);border-radius: 10px; margin-bottom: 10px; height: 50px;"> <h3 style="padding-top: 15px;">EDUCATION</h3></div>
+        <div style="height: 250px;">
+        <div class="tab" style="display: flex;justify-content: space-between;margin-bottom: 20px;">
+            <button class="tablinks" onmouseover="openCity(event, 'London')" style="margin-left: 10px;width: 400px;"><h3>Under Graduatation</h3></button>
+            <button class="tablinks" onmouseover="openCity(event, 'Paris')" style="width: 400px;"><h3>Intermediate</h3></button>
+            <button class="tablinks" onmouseover="openCity(event, 'Tokyo')" style="margin-right: 10px;width: 400px;"><h3>High School Education</h3></button>
+          </div>
+          
+          
+
+
+          <div class="center-container peach-box">
+            <div id="London" class="tabcontent tabcontent0" style="border: #000000 solid 1.1px; border-radius: 10px;width: 95%;border-left:1%;margin-left: 2.5%;background-color: #fdcccc;padding-left: 2%;">
+              <!-- London content here -->
+              <p>
+                <b>Name</b> : Institute Of Aeronautical Engineering<p>
+                    <b>Degree</b> : B.Tech<p>
+                    <b>Percentage</b> : 69.7 %<p>
+                    <b>Passed Out</b> : 2024<p>
+                    <b>Location</b> : Dundigal, Hyderabad - 500 043,
+                    Telangana, India.</p>
+            </div>
+          </div>
+        
+          <div class="center-container peach-box">
+            <div id="Paris" class="tabcontent tabcontent1"  style="border: #000000 solid 1.1px; border-radius: 10px;width: 95%;border-left:1%;margin-left: 2.5%;background-color: #fdcccc;padding-left: 2%;">
+              <!-- Paris content here -->
+              <p>
+                <b>Name</b> : Sree Chaitanya Jr Kalasala<p>
+                    <b>Degree</b> : MPC<p>
+                    <b>Percentage</b> : 84.8 %<p>
+                    <b>Passed Out</b> : 2020<p>
+                    <b>Location</b> : KPHB , JNTU Hyderabad - 500 043,
+                    Telangana, India.</p>
+            </div>
+          </div>
+        
+          <div class="center-container peach-box">
+            <div id="Tokyo" class="tabcontent tabcontent2"   style="border: #000000 solid 1.1px; border-radius: 10px;width: 95%;border-left:1%;margin-left: 2.5%;background-color: #fdcccc;padding-left: 2%;">
+              <!-- Tokyo content here -->
+              <p >
+                <b>Name</b> : Geetajali Model High School<p>
+                    <b>Degree</b> : SSC<p>
+                    <b>Percentage</b> : 78 %<p>
+                    <b>Passed Out</b> : 2018<p>
+                    <b>Location</b> : KPHB , 7th Phase Hyderabad - 500 043,
+                    Telangana, India.</p>
+            </div>
+          </div>
+    
+        </div>
+
+
+        
+
+
+
+
+
+        
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        <div align="center" style="margin-top: 25px;background-color: rgb(71, 8, 8);color: rgb(255, 255, 255);border-radius: 10px; margin-bottom: 10px; height: 50px;margin-top: 50px;"> <h3 style="padding-top: 15px;">PROJECT'S  AND  CERTIFICATION'S</h3></div>
+          
+          
+   
+
+
+
+
+<div  style="display:flex;justify-content: space-between;  margin-left: 1% ; margin-right: 1%; ">
+
+
+  <div class="color-block block1" onmouseover="showPopup(1)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;border-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+    <h2 style="font-family:monospace; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">CERTIFICATION IN UDEMY</h2>
+  </div>
+  
+  <div class="color-block block2" onmouseover="showPopup(2)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;border-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+    <h2 style="font-family:monospace; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">DISEASE PREDICTION CHATBOT</h2>
+  </div>
+  
+  <div class="color-block block3" onmouseover="showPopup(3)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;border-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+    <h2 style="font-family:monospace; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">WEATHER APPLICATION </h2>
+  </div>
+  
+  <div class="color-block block4" onmouseover="showPopup(4)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;border-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+    <h2 style="font-family:monospace; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">RESPONSIVE WEBPAGE</h2>
+  </div>
+  
+
+  </div>
+  
+
+
+
+
+
+  <div >
+    <div class="popup popup1" id="popup1" >
+        <div >
+          <h4>
+            I have successfully earned Udemy certifications in HTML, Python, CSS, and Django, showcasing my proficiency in web development technologies. These certifications reflect my dedication to acquiring comprehensive skills in front-end and back-end development for building robust and dynamic websites.
+          </h4>
+        </div>
+    </div>
+    
+    <div class="popup popup2" id="popup2">
+        <p>content</p>
+    </div>
+    
+    <div class="popup popup3" id="popup3">
+        <p>content</p>
+    </div>
+    
+    <div class="popup popup4" id="popup4">
+        <p>Popup 4 content</p>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <div align="center" style="margin-top: 25px;background-color: rgb(71, 8, 8);color: rgb(255, 255, 255);border-radius: 10px; margin-bottom: 10px; height: 50px;margin-top: 50px;margin-top: 215px;"> <h3 style="padding-top: 15px;">TECHNICAL SKILL'S</h3></div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+  <div id="Londonz" class="tabcontentz" style="height: 444px;">
+    <p>In <strong>Python</strong>, I possess expertise in <em>loops</em>, <em>conditions</em>, <em>sorting</em>, and <em>searching</em> algorithms.<hr> My proficiency extends to data structures like <em>single</em>, <em>double</em>, and <em>circular</em> linked lists, as well as <em>queues</em>. <hr>Additionally, I've tackled coding challenges, including implementing games like<br> <br><strong>Hangman</strong> and <strong>Letter Guess<br></strong>,<br> cryptographic tasks like <strong>Caesar Cipher</strong>, & <br><br>solving problems related to <strong>palindromes</strong> & <br><strong>symmetric</strong> sequences.</p><hr>
+ <div style="display: flex;justify-content: space-between;margin-right: 10%;margin-left: 10%;margin-top: 10%;">
+  <a style="border: #bbb solid 1px;border-radius: 50px;padding: 20px;width: 30%;text-align: center;"> Topics</a>
+  <a style="display: flex;justify-content: space-between;margin-right: 10%;margin-left: 10%;margin-top: 10%;">
+    <a style="border: #bbb solid 1px;border-radius: 50px;padding: 20px;width: 30%;text-align: center;"> problems</a>
+ </div>
+    
+
+  </div>
+  
+  <div id="Parisz" class="tabcontentz" style="height: 444px;">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p> 
+  </div>
+  
+  <div id="Tokyoz" class="tabcontentz" style="height: 444px;">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="a" class="tabcontentz" style="height: 444px;">
+    <h3>Tokyoaaaaaaaaaa</h3>
+    <p>Tokyo is the capital of Japan.aaaaaaaaaaaaa</p>
+  </div>
+
+  <div id="b" class="tabcontentz" style="height: 444px;">
+    <h3>Tokyobbbbbbbbbbbbbb</h3>
+    <p>Tokyo is the capital of Japan.bbbbbbbbbbbbb</p>
+  </div>
+
+  <div id="c" class="tabcontentz" style="height: 444px;">
+    <h3>Tokyoccccccccccc</h3>
+    <p>Tokyo is the capital of Japan.ccccccccccccc</p>
+  </div>
+
+  <div id="d" class="tabcontentz" style="height: 444px;">
+    <h3>Tokyodddddddddddd</h3>
+    <p>Tokyo is the capital of Japan.dddddddddddddddd</p>
+  </div>
+
+  <div class="tabz " style="margin-bottom: 160px;">
+    <p class="tablinksz"  onmouseover="openCityz(event, 'Londonz')">Python</p>
+    <p class="tablinksz" onmouseover="openCityz(event, 'Parisz')">Html</p>
+    <p class="tablinksz" onmouseover="openCityz(event, 'Tokyoz')">Css</p>
+    <p class="tablinksz" onmouseover="openCityz(event, 'a')">Django</p>
+    <p class="tablinksz" onmouseover="openCityz(event, 'b')">Django RestAPI</p>
+    <p class="tablinksz" onmouseover="openCityz(event, 'c')">MongoDB</p>
+    <p class="tablinksz" onmouseover="openCityz(event, 'd')">Data Structure Algorithm</p>
+  </div>
+
+
+
+
+
+
+<Div class="clearfix"></Div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+  <h1 align="center" style="border: #000000 solid; border-radius: 30px;">SOFT SKILLS</h1>
+</div>
+
+
+  <div class="slideshow-container" style="margin-top: -12px;" onmouseenter="pauseSlideshow()" onmouseleave="resumeSlideshow()">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <div class="block block1"></div>
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <div class="block block2"></div>
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <div class="block block3"></div>
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+
+
+
+
+
+ <!-- Your page content goes here -->
+
+
+
+ <div>
+  <h1 align="center" style="border: #000000 solid; border-radius: 30px;">INTERESTS</h1>
+</div>
+<div class="parallax-container" style="height: 0%;">
+  
+</div>
+
+
+
+
+
+<div class="parallax-container">
+  <div class="parallax-content">
+      <h2>Parallax Section</h2>
+      <p>This is the parallax section of your page.</p>
+      <!-- Add more content for the parallax section -->
+  </div>
+</div>
+
+
+<div class="content">
+  <h1>Welcome to My Website</h1>
+  <p>This is some content on your webpage.</p>
+  <!-- Add more content as needed -->
+</div>
+
+<div class="parallax-container1">
+  <div class="parallax-content1">
+      <h2>Parallax Section</h2>
+      <p>This is the parallax section of your page.</p>
+      <!-- Add more content for the parallax section -->
+  </div>
+</div>
+
+
+<div class="content">
+  <h1>Welcome to My Website</h1>
+  <p>This is some content on your webpage.</p>
+  <!-- Add more content as needed -->
+</div>
+
+<div class="parallax-container2">
+  <div class="parallax-content2">
+      <h2>Parallax Section</h2>
+      <p>This is the parallax section of your page.</p>
+      <!-- Add more content for the parallax section -->
+  </div>
+</div>
+
+
+
+
+
+          
+
+  
+<div class="full-width-div">
+
+  <div class="info" style="display: block; ">
+
+    <div class="heading" style="display: flex; justify-content: center; align-items: center;margin-bottom: -30px; ">
+      <h2 style="color: rgb(0, 0, 0); margin-right: 6px;">CONTACT </h2>
+      <img src="support.png" style="width: 21px; height: 21px;">
+    </div>
+    
+    <div id="contact-info" >
+      <h4 align="center">+91 9550591701</h4>
+      <h4 align="center">gummadicharan37@gmail.com</h4>
+      <h4 align="center"><address>LIG, KPHB Colony, Hyderabad,Telangana, 500072</address></h4>
+    </div>
+
+  </div>
+
+</div>
+        
+        
+
+
+
+
+
+
+
+          
+          
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Trigger animation after the page is fully loaded
+                document.getElementById("animated-text").style.animationPlayState = "running";
+            });
+    
+            function openCity(evt, cityName) {
+                var tabcontent = document.getElementsByClassName("tabcontent");
+                var tablinks = document.getElementsByClassName("tablinks");
+    
+                Array.from(tabcontent).forEach(elem => elem.style.display = "none");
+                Array.from(tablinks).forEach(elem => elem.classList.remove("active"));
+    
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.classList.add("active");
+            }
+          
+ 
+
+
+
+
+function showPopup(index) {
+        const popup = document.getElementById('popup' + index);
+        popup.style.display = 'block';
+        blurOtherBlocks(index);
+    }
+
+    function hidePopup() {
+        const popups = document.querySelectorAll('.popup');
+        popups.forEach((popup) => {
+            popup.style.display = 'none';
+        });
+        unblurBlocks();
+    }
+
+    function blurOtherBlocks(index) {
+        const blocks = document.querySelectorAll('.color-block');
+        blocks.forEach((block, i) => {
+            if (i + 1 !== index) {
+                block.style.filter = 'blur(2px)';
+            }
+        });
+    }
+
+    function unblurBlocks() {
+        const blocks = document.querySelectorAll('.color-block');
+        blocks.forEach((block) => {
+            block.style.filter = 'none';
+        });
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function openCityz(evt, cityName) {
+  var i, tabcontentz, tablinksz;
+  tabcontentz = document.getElementsByClassName("tabcontentz");
+  for (i = 0; i < tabcontentz.length; i++) {
+    tabcontentz[i].style.display = "none";
+  }
+  tablinksz = document.getElementsByClassName("tablinksz");
+  for (i = 0; i < tablinksz.length; i++) {
+    tablinksz[i].className = tablinksz[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
+
+
+
+
+
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+let slideIndex = 1;
+let slideshowInterval;
+
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+function pauseSlideshow() {
+  clearInterval(slideshowInterval);
+}
+
+function resumeSlideshow() {
+  slideshowInterval = setInterval(function() {
+    plusSlides(1);
+  }, 2000);
+}
+
+// Automatic slideshow every 2 seconds
+slideshowInterval = setInterval(function() {
+  plusSlides(1);
+}, 2000);
+
+
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            window.addEventListener("scroll", function() {
+                let offset = window.pageYOffset;
+                document.querySelector(".parallax-container").style.backgroundPositionY = offset * 0.7 + "px";
+            });
+        });
+    
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
