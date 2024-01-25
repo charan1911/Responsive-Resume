@@ -176,10 +176,10 @@
 
 
 
-        .popup1 { background-color: #acdeff; width: 99%;height: 200px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px;margin-left: 1%;border-top-left-radius: 0px; }
-        .popup2 { background-color: #acffc5; width: 99%;height: 200px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px; margin-left: 1%;}
-        .popup3 { background-color: #b6acff; width: 99%; height: 200px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px;margin-left: 1%; }
-        .popup4 { background-color: #ffacac; width: 98%; height: 200px ; margin-top: -2px;border-radius: 10px;border:#000000 solid 2px;
+        .popup1 { background-color: #acdeff; width: 99%;height: 300px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px;margin-left: 1%;border-top-left-radius: 0px; }
+        .popup2 { background-color: #acffc5; width: 99%;height: 300px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px; margin-left: 1%;}
+        .popup3 { background-color: #b6acff; width: 99%; height: 300px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px;margin-left: 1%; }
+        .popup4 { background-color: #ffacac; width: 98%; height: 300px ; margin-top: -2px;border-radius: 10px;border:#000000 solid 2px;
           border-top-right-radius: 0px;margin-left: 1%;}
 
 
@@ -413,7 +413,7 @@ body {
 .parallax-container2 {
     height: 600px; /* Adjust the height based on your design */
     width: 100%;
-    background: url("vollyball.png")  fixed;
+    background: url('vollyball.png')  fixed;
     position: relative;
     background-size: cover;
     overflow: hidden;
@@ -432,7 +432,7 @@ body {
         .parallax-container {
     height: 400px; /* Adjust the height based on your design */
     
-    background: url("photography.jpg") fixed;
+    background: url('book.jpg') fixed;
     position: relative;
     background-size: cover;
     overflow: hidden;
@@ -450,7 +450,7 @@ body {
 
         .parallax-container1{
     height: 400px; /* Adjust the height based on your design */
-    background: url("book.jpg") fixed;
+    background: url("photography.jpg") fixed;
     position: relative;
     background-size: cover;
     overflow: hidden;
@@ -522,7 +522,10 @@ body {
     .social-links {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 3px;
+    width: 50%;
+    
+    
 }
 
 .zoom-out {
@@ -534,6 +537,66 @@ body {
 }
 
 
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(70%);
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.543);
+  margin-bottom: -100px;
+}
+
+.content-overlay img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.gummadi-text {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.content-text {
+  max-width: fit-content;
+  margin-bottom: 20px;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos-container img {
+  max-width: 50px;
+  height: auto;
+}
 
 
    
@@ -557,34 +620,33 @@ body {
     <body>
 
 
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="background video.mp4" type="video/mp4">
+        </video>
       
-
-      <div style="display: flex" class="intro">
-        <div>
-            <img src="colour_passport_pic.png" alt="Passport Photo" >
-        </div>
-    
-        <div class="intro-info"style="display: block;">
-            <div>
-                <h1 style="margin-left: 15px;">
-                    My name is Gummadi Charan,
-                    and I am passionate about the field of Information Technology.
-                    With a strong background in IT, I am eager to join your esteemed company.
-                    My goal is to contribute to our business's growth by leveraging my skills and expertise,
-                    while also continuously learning and adapting to the ever-evolving landscape of technology.
-                </h1>
-            </div>
-    
-            <div class="social-links">
-              <a href="https://github.com/charan1911" class="zoom-out"><img width="60px" src="github.png" alt="GitHub"></a>
+        <div class="content-overlay">
+          <div class="gummadi-text">HELLO !!</div>
+          <img src="colour_passport_pic.png" alt="Profile Image">
+          <div class="content-text">
+            My name is Gummadi Charan,
+            and I am passionate about the field of Information Technology.
+            With a strong background in IT, I am eager to join your esteemed company.
+            My goal is to contribute to our business's growth by leveraging my skills and expertise,
+            while also continuously learning and adapting to the ever-evolving landscape of technology.
+          </div>
+          <div class="logos-container social-links">
+            <a href="https://github.com/charan1911" class="zoom-out"><img width="60px" src="github.png" alt="GitHub"></a>
               <a href="https://www.linkedin.com/in/charan-gummadi-95047121b/" class="zoom-out"><img width="60px" src="linkedin.png" alt="LinkedIn"></a>
               <a href="https://www.codechef.com/users/charan_1119" class="zoom-out"><img width="60px" src="codechef.png" alt="CodeChef"></a>
               <a href="https://www.hackerrank.com/profile/20951a1216" class="zoom-out"><img width="60px" src="hackerrank.png" alt="HackerRank"></a>
               <a href="https://leetcode.com/Gummadi_Charan/" class="zoom-out"><img width="60px" src="leetcode.png" alt="LeetCode"></a>
           </div>
-          
         </div>
-    </div>
+      </div>
+      
+
+    
     
 
 
@@ -657,6 +719,10 @@ body {
     
         </div>
 
+
+<div style=" border-radius: 10px;width: 95%;border-left:1%;margin-left: 2.5%;background-color: #ffafaf3b;padding-left: 2%;margin-top: -170px;height: 190px;">
+  
+  </div>
 
         
 
@@ -764,32 +830,57 @@ body {
 
   <div >
     <div class="popup popup1" id="popup1" >
-        <div >
-          <h4>
+        <div  style="margin-left: 3%;margin-right: 4%;">
+          <p>
             I have successfully earned Udemy certifications in HTML, Python, CSS, and Django, showcasing my proficiency in web development technologies. These certifications reflect my dedication to acquiring comprehensive skills in front-end and back-end development for building robust and dynamic websites.
-          </h4>
+          </p>
+          
         </div>
     </div>
     
     <div class="popup popup2" id="popup2">
-        <p>content</p>
+        <p><b>**Disease Prediction Chatbot Project**</b><br><br>
+          Developed an intuitive Disease Prediction Chatbot using NLP, Streamlit, and a DDL model. Achieved accurate disease predictions through seamless user interaction. Demonstrated expertise in NLP, UI development with Streamlit, and implementing Deep Learning models. Ongoing refinement efforts focus on enhancing accuracy and expanding disease coverage. This project showcases my commitment to leveraging technology for healthcare improvements.</p>
     </div>
     
     <div class="popup popup3" id="popup3">
-        <p>content</p>
+        <p><b>**Weather Application Project**</b><br><br>
+          Built a robust Weather Application incorporating APIs for real-time data retrieval. Developed an intuitive user interface for seamless user experience. Demonstrated proficiency in API integration, data visualization, and responsive design. Ongoing efforts include feature enhancements and integration of advanced forecasting algorithms. This project showcases my skills in web development, API integration, and commitment to delivering user-friendly applications.</p>
     </div>
     
-    <div class="popup popup4" id="popup4">
-        <p>Popup 4 content</p>
+    <div class="popup popup4" id="popup4" >
+      
+      <p><b>**Responsive Webpage Project**</b><br><br>
+      Designed and built a fully responsive webpage, ensuring optimal user experience across devices. Implemented flexible layouts and media queries for seamless adaptation to various screen sizes. Demonstrated expertise in responsive web design principles, including fluid grids and flexible images. This project highlights my commitment to delivering visually appealing and user-friendly web solutions.</p></div>
+        
     </div>
     </div>
+
+
+
+    <div style="background-color: rgba(0, 0, 0, 0.135); width: 98%; height: 280px; margin-top: 0px; border-radius: 0px; border: #00000000 solid .5px; margin-left: 1%; margin-right: 1%; display: flex; align-items: center; justify-content: center;color: #919191;">
+      <h4 >N/A</h4>
+  </div>
+
+  <div style="margin: 1%;display: flex;justify-content: space-between;margin-top: 3%;">
+    <a style="border: #000000 1px solid;border-radius: 10px;padding: 5px;background-color: #acdeff76;width: 20%;text-align: center; height: 70px;display: flex;align-items: center;justify-content: center;text-decoration: none;"   href="https://drive.google.com/file/d/1beSLHxOL1YQVEnv7230spgbWW7VKb6gp/view?usp=sharing">Python</a>
+    <a style="border: #000000 1px solid;border-radius: 10px;padding: 5px;background-color: #acdeff76;width: 20%;text-align: center; height: 70px;display: flex;align-items: center;justify-content: center;text-decoration: none; " href="https://drive.google.com/file/d/10ReIeuTvzS4jJbmHUp3hqAYKAnXB5FOo/view?usp=drive_link">Html</a>
+    <a style="border: #000000 1px solid;border-radius: 10px;padding: 5px;background-color: #acdeff76;width: 20%;text-align: center; height: 70px;display: flex;align-items: center;justify-content: center;text-decoration: none;" href="https://drive.google.com/file/d/1wD_jBVeDPjI6L2FEdY9-E5q277xztvQ7/view?usp=sharing">Css</a>
+    <a style="border: #000000 1px solid;border-radius: 10px;padding: 5px;background-color: #acdeff76;width: 20%;text-align: center; height: 70px;display: flex;align-items: center;justify-content: center;text-decoration: none;" href="https://drive.google.com/file/d/1syoW7ayZ5aQgGXJ8Fk7jrye4farPEYvT/view?usp=sharing">Django</a>
+  </div>
+  <div style="margin: 1%;display: flex;justify-content: space-between;margin-top: 1.5%;">
+    <a style="border: #000000 1px solid;border-radius: 10px;padding: 5px;background-color: #acdeff76;width: 30%;text-align: center; height: 70px;display: flex;align-items: center;justify-content: center;text-decoration: none;" href="#">Disease Predication Chatbot</a>
+    <a style="border: #000000 1px solid;border-radius: 10px;padding: 5px;background-color: #acdeff76;width: 30%;text-align: center;height: 70px;display: flex;align-items: center;justify-content: center;text-decoration: none;" href="https://github.com/charan1911/WEATHER_APP-DJANGO-">Weather Application</a>
+    <a style="border: #000000 1px solid;border-radius: 10px;padding: 5px;background-color: #acdeff76;width: 30%;text-align: center;height: 70px;display: flex;align-items: center;justify-content: center;text-decoration: none;" href="https://github.com/charan1911/Responsive-Resume">Responsive Webpage</a>
+  </div>
+  
     
     
     
     
     
     
-    <div align="center" style="margin-top: 25px;background-color: rgb(71, 8, 8);color: rgb(255, 255, 255);border-radius: 10px; margin-bottom: 10px; height: 50px;margin-top: 50px;margin-top: 215px;"> <h3 style="padding-top: 15px;">TECHNICAL SKILL'S</h3></div>
+    <div align="center" style="margin-top: 25px;background-color: rgb(71, 8, 8);color: rgb(255, 255, 255);border-radius: 10px; margin-bottom: 10px; height: 50px;"> <h3 style="padding-top: 15px;">TECHNICAL SKILL'S</h3></div>
   
 
 
@@ -849,26 +940,74 @@ body {
 
 
   <div  id="Tokyoz" class="tabcontentz" style="height: 450px;background-color: #bbbbbb48; border-radius: 10px;margin-top: 12px;margin-left: 9px;">
-      <div ></div>  
+      <div ><b>**CSS Proficiency:**</b><hr>
+        - Expert in CSS for precise and stylish webpage design.<hr>
+        - Ensures responsiveness across diverse devices.<hr>
+        - Implements animations and transitions for enhanced user experience.<hr>
+        - Familiar with CSS frameworks, committed to staying updated on industry trends.</div>  
   </div>
 
   <div  id="a"class="tabcontentz" style="height: 450px;background-color: #bbbbbb48; border-radius: 10px;margin-top: 12px;margin-left: 9px;">
-    <div ></div>  
+    <div >
+      <b>**Django and MVT Architecture:**</b>
+- Proficient in Django, an efficient web framework for Python.<hr>
+- In-depth understanding of the MVT (Model-View-Template) architectural pattern used in Django.<hr>
+- Experienced in building robust web applications by effectively utilizing models, views, and templates.<hr>
+- Committed to leveraging Django's versatility for scalable and maintainable web solutions.<hr>
+    </div>  
 </div>
 
 
 <div  id="b" class="tabcontentz" style="height: 450px;background-color: #bbbbbb48; border-radius: 10px;margin-top: 12px;margin-left: 9px;">
-  <div ></div>  
+  <div >
+    <b>**Django REST API Proficiency:**</b>
+- Demonstrated expertise in Django for building RESTful APIs, specializing in CRUD operations.<br><hr>
+- Proficient in utilizing Mixins to enhance code reusability and streamline common API functionalities.<br><hr>
+- Experienced in crafting powerful API views using Django's APIViews, ensuring flexibility and customization.<br><hr>
+- Skilled in designing scalable and maintainable RESTful architectures to meet diverse project requirements.
+  </div>  
 </div>
 
 <div  id="c" class="tabcontentz" style="height: 450px;background-color: #bbbbbb48; border-radius: 10px;margin-top: 12px;margin-left: 9px;">
-  <div ></div>  
+  <div >
+    <b>**MongoDB Basics:**</b><br><hr>
+<b>1. **Database Creation:**</b>
+   - Create databases to organize data.
+   <br><hr><br>
+<b>2. **Collection Setup:**</b>
+   - Set up collections to store related data.
+   <br><hr><br>
+<b>3. **Field Definition:**</b>
+   - Define fields for document structure.
+   <br><hr><br>
+<b>4. **Data Insertion:**</b>
+   - Insert and update documents with accurate data.
+   <br><hr><br>
+<b>5. **Query and Index:**</b>
+   - Craft queries and establish indexes for efficient data retrieval.
+  </div>  
 </div>
 
 <div  id="d" class="tabcontentz" style="height: 450px;background-color: #bbbbbb48; border-radius: 10px;margin-top: 12px;margin-left: 9px;" >
-  <div ></div>  
+  <div ><b>**DSA Basics:**</b><br><hr>
+    <b>1. **Loops and Conditions:**</b>
+       - Proficient in using loops and conditional statements for effective code execution.
+       <br><hr><br>
+    <b>2. **Queue Handling:**</b>
+       - Skilled in implementing standard queues for organized data processing.
+       <br><hr><br>
+    <b>3. **List Operations:**</b>
+       - Knowledgeable in working with lists, including arrays and linked lists, for dynamic data storage.
+       <br><hr><br>
+    <b>4. **Double and Circular Queues:**</b>
+       - Familiarity with double-ended queues and circular queues for specialized use cases.
+       <br><hr><br>
+    <b>5. **Algorithmic Thinking:**</b>
+       - Strong problem-solving skills, applying algorithms to solve diverse challenges.</div>  
 </div>
   
+
+
 
  
 
@@ -884,14 +1023,16 @@ body {
 
 
 
-
+  <div style="height: 450px;background-color: #bbbbbb48; border-radius: 10px;margin-top: 22px;margin-left: 9px;
+  
+  width: 71%;
+  "></div>
 
 
 <Div class="clearfix"></Div>
 
 
   
-
 
 
 
@@ -979,9 +1120,6 @@ body {
 
 
 
-
-
-
  <!-- Your page content goes here -->
 
 
@@ -992,7 +1130,6 @@ body {
 <div class="parallax-container" style="height: 0%;">
 <!--    FIRST PARALLAL FIRST IS REPETING SO WITH HEIGHT 0 ITS BEEN SOLVED -->
 </div>
-
 
 
 
@@ -1235,6 +1372,9 @@ slideshowInterval = setInterval(function() {
             });
         });
     
+
+
+
 
 
 
