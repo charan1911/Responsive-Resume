@@ -599,7 +599,20 @@ video {
 }
 
 
+
+
+html {
+  scroll-behavior: smooth;
+}
+
    
+
+
+
+
+
+
+
 </style>
 
 
@@ -619,14 +632,14 @@ video {
     </head>
     <body>
 
-
-      <div class="video-container">
+      <p id="section1"></p>
+      <div class="video-container" >
         <video autoplay muted loop>
           <source src="background video.mp4" type="video/mp4">
         </video>
       
-        <div class="content-overlay">
-          <div class="gummadi-text">HELLO !!</div>
+        <div  class="content-overlay">
+          <div class="gummadi-text"><p >HELLO !!</p></div>
           <img src="colour_passport_pic.png" alt="Profile Image">
           <div class="content-text">
             My name is Gummadi Charan,
@@ -654,20 +667,44 @@ video {
 
         <div id="navbar" style="background-color: rgb(71, 8, 8);">
             <div class="topname" style="display: flex; justify-content: space-between; ">
-                <div align="center"><img src="profile.png" style="width: 30px;height: 30px;margin-top: 10px;"><h5 style="margin: 0px;padding: 0px;margin-left: 8px;color: white;">PROFILE</h5></div>
+              <div class="main" id="section2">
+                <img src="profile.png " style="width: 35px;height: 35px;margin-top: 12px;margin-left: 18px;"><h5><a href="#section1" style="font-size: smaller  ;margin-top: -25px;margin-left: 8px;  text-decoration: none; color: rgb(255, 255, 255); display: inline-block; padding: 5px; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#0000'" onmouseout="this.style.backgroundColor='transparent'">PROFILE</a></h5>
+
+               </div>
                 <div style="display: flex; justify-content: space-between;">
-                  <div align="center" style="margin-right: 30px;"><img src="home.png" style="width: 30px;height: 30px;margin-top: 10px;margin-left: 5px;"><h5 style="margin: 0px;padding: 0px;margin-left: 3px;color: white;">HOME</h5></div>
-                  <div align="center" style="margin-right: 30px;"><img src="about_us.png" style="width: 30px;height: 30px;margin-top: 10px;margin-left: 14px;"><h5 style="margin: 0px;padding: 0px;margin-left: 3px;color: white;">ABOUT US</h5></div>
-                  <div align="center" ><img src="contact_us.png" style="width: 30px;height: 30px;margin-top: 10px;margin-left: 14px;"><h5 style="margin: 0px;padding: 0px;margin-left: 3px;color: white;">CONTACT US</h5></div>
+                  <div class="main" id="section2">
+                    <img src="home.png" style="width: 35px;height: 35px;margin-top: 12px;margin-left: 18px;"><h5><a href="#section1" style="font-size: smaller  ;margin-top: -25px;margin-left: 8px;  text-decoration: none; color: rgb(255, 255, 255); display: inline-block; padding: 5px; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#0000'" onmouseout="this.style.backgroundColor='transparent'">HOME</a></h5>
+    
+                   </div>
+                   <div class="main" id="section2">
+                    <img src="about_us.png" style="width: 35px;height: 35px;margin-top: 12px;margin-left: 18px;"><h5><a href="#section3" style="font-size: smaller  ;margin-top: -25px;margin-left: 8px;  text-decoration: none; color: rgb(255, 255, 255); display: inline-block; padding: 5px; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#0000'" onmouseout="this.style.backgroundColor='transparent'">ABOUT US</a></h5>
+    
+                   </div>
+                   <div class="main" id="section2">
+                    <img src="contact_us.png" style="width: 35px;height: 35px;margin-top: 12px;margin-left: 18px;"><h5><a href="#section4" style="font-size: smaller  ;margin-top: -25px;margin-left: 8px;  text-decoration: none; color: rgb(255, 255, 255); display: inline-block; padding: 5px; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#0000'" onmouseout="this.style.backgroundColor='transparent'">CONTACT</a></h5>
+    
+                   </div>
                 </div>
                 
-                <div align="center" style="margin-right: 15px;"><img src="log_out.png" style="width: 30px;height: 30px;margin-top: 10px;margin-left: 14px;"><h5 style="margin: 0px;padding: 0px;margin-left: 3px;color: white;">LOG OUT</h5></div>
+                <div class="main" id="section2">
+                  <img src="log_out.png" style="width: 35px;height: 35px;margin-top: 12px;margin-left: 18px;">
+                  <h5>
+                    <a href="javascript:void(0);" onclick="confirmLogout()" style="font-size: smaller; margin-top: -25px; margin-right: 8px; text-decoration: none; color: rgb(255, 255, 255); display: inline-block; padding: 5px; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#0000'" onmouseout="this.style.backgroundColor='transparent'">
+                      LOG OUT
+                    </a>
+                  </h5>
+                </div>
+                 
             </div> 
         </div> 
         
+        
       
         
-        <div align="center" style="margin-top: 25px;background-color: rgb(71, 8, 8);color: rgb(255, 255, 255);border-radius: 10px; margin-bottom: 10px; height: 50px;"> <h3 style="padding-top: 15px;">EDUCATION</h3></div>
+        <div  align="center" style="margin-top: 25px;background-color: rgb(71, 8, 8);color: rgb(255, 255, 255);border-radius: 10px; margin-bottom: 10px; height: 50px;"> <h3 style="padding-top: 15px;">EDUCATION</h3>
+          <p id="section3" style="margin-top: -150px;" ></p>
+        </div>
+       
         <div style="height: 250px;">
         <div class="tab" style="display: flex;justify-content: space-between;margin-bottom: 20px;">
             <button class="tablinks" onmouseover="openCity(event, 'London')" style="margin-left: 10px;width: 400px;"><h3>Under Graduatation</h3></button>
@@ -1178,6 +1215,7 @@ video {
 
   
 <div class="full-width-div">
+  <p id="section4"  ></p>
 
   <div class="info" style="display: block; ">
 
@@ -1208,6 +1246,43 @@ video {
           
 
           <script>
+
+
+
+
+function confirmLogout() {
+      // Show a simple pop-up message
+      alert("Log Out Successful");
+    }
+
+
+
+function smoothScroll(targetId) {
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             document.addEventListener("DOMContentLoaded", function () {
                 // Trigger animation after the page is fully loaded
                 document.getElementById("animated-text").style.animationPlayState = "running";
