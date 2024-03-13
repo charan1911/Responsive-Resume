@@ -41,8 +41,8 @@
           
   /*FOR EDUCATION HOVER EFFECT BUTTONS */
           .tab button.active {
-              background-color: #f6b4b4;
-              color: rgb(0, 0, 0);
+              background-color: #1103037a;
+              color: rgb(255, 255, 255);
               border-color: black;
           }
   
@@ -66,14 +66,14 @@
           .tablinks {
               height: 60px;
               width: 200px;
-              border-radius: 12px;
-              border: 1.5px solid #fffefe;
-              background-color: #000000;
+              border-radius:0px;
+              border: 1.5px solid #000000;
+              background-color: #2f2f2f;
               color: rgb(255, 255, 255);
           }
   
           .tablinks:hover {
-              box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.685), 0 17px 50px 0 rgb(0, 0, 0);
+              box-shadow: 0 12px 16px 0 rgb(175, 178, 243), 0 17px 50px 0 rgb(175, 178, 243);
           }
   
           .box {
@@ -176,11 +176,11 @@
 
 
 
-        .popup1 { background-color: #acdeff; width: 99%;height: 300px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px;margin-left: 1%;border-top-left-radius: 0px; }
-        .popup2 { background-color: #acffc5; width: 99%;height: 300px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px; margin-left: 1%;}
-        .popup3 { background-color: #b6acff; width: 99%; height: 300px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px;margin-left: 1%; }
-        .popup4 { background-color: #ffacac; width: 98%; height: 300px ; margin-top: -2px;border-radius: 10px;border:#000000 solid 2px;
-          border-top-right-radius: 0px;margin-left: 1%;}
+        .popup1 { background-color: #acdeff; width: 100%;height: 300px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px;}
+        .popup2 { background-color: #acffc5; width: 100%;height: 300px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px; }
+        .popup3 { background-color: #b6acff; width: 100%; height:300px ; margin-top: -3px;border-radius: 10px;border:#000000 solid 2px; }
+        .popup4 { background-color: #ffacac; width: 100%; height:300px ; margin-top: -2px;border-radius: 10px;border:#000000 solid 2px;
+          }
 
 
           
@@ -533,7 +533,7 @@ body {
 }
 
 .zoom-out:hover {
-    transform: scale(1.2); /* Adjust the scale factor as needed */
+    transform: scale(1.5); /* Adjust the scale factor as needed */
 }
 
 
@@ -553,7 +553,7 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  filter: brightness(70%);
+  filter: brightness(40%);
 }
 
 .content-overlay {
@@ -665,7 +665,7 @@ html {
 
 
 
-        <div id="navbar" style="background-color: rgb(71, 8, 8);">
+        <div id="navbar" style="background-color: rgb(26, 22, 22);">
             <div class="topname" style="display: flex; justify-content: space-between; ">
               <div class="main" id="section2">
                 <img src="profile.png " style="width: 35px;height: 35px;margin-top: 12px;margin-left: 18px;"><h5><a href="#section1" style="font-size: smaller  ;margin-top: -25px;margin-left: 8px;  text-decoration: none; color: rgb(255, 255, 255); display: inline-block; padding: 5px; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#0000'" onmouseout="this.style.backgroundColor='transparent'">PROFILE</a></h5>
@@ -701,22 +701,22 @@ html {
         
       
         
-        <div  align="center" style="margin-top: 25px;background-color: rgb(71, 8, 8);color: rgb(255, 255, 255);border-radius: 10px; margin-bottom: 10px; height: 50px;"> <h3 style="padding-top: 15px;">EDUCATION</h3>
-          <p id="section3" style="margin-top: -150px;" ></p>
+        <div  align="center" style="margin-top: -20px;background-color: rgb(26, 22, 22);color: rgb(255, 255, 255);border-radius: 0px; margin-bottom: 0.9px; height: 50px;"> <h3 style="padding-top: 15px;">EDUCATION</h3>
+          <p id="section3" style="margin-top: 0px;" ></p>
         </div>
        
         <div style="height: 250px;">
-        <div class="tab" style="display: flex;justify-content: space-between;margin-bottom: 20px;">
-            <button class="tablinks" onmouseover="openCity(event, 'London')" style="margin-left: 10px;width: 400px;"><h3>Under Graduatation</h3></button>
-            <button class="tablinks" onmouseover="openCity(event, 'Paris')" style="width: 400px;"><h3>Intermediate</h3></button>
-            <button class="tablinks" onmouseover="openCity(event, 'Tokyo')" style="margin-right: 10px;width: 400px;"><h3>High School Education</h3></button>
+        <div class="tab" style="display: flex;justify-content: space-between;margin-bottom: 2px;margin-top: -1px;">
+            <button class="tablinks" onmouseover="openCity(event, 'London')" style="margin-left: 0px;width: 33.33%;"><h3>Under Graduatation</h3></button>
+            <button class="tablinks" onmouseover="openCity(event, 'Paris')" style="width: 33.33%;"><h3>Intermediate</h3></button>
+            <button class="tablinks" onmouseover="openCity(event, 'Tokyo')" style="margin-right: 0px;width: 33.33%;"><h3>High School Education</h3></button>
           </div>
           
           
 
 
           <div class="center-container peach-box">
-            <div id="London" class="tabcontent tabcontent0" style="border: #000000 solid 1.1px; border-radius: 10px;width: 95%;border-left:1%;margin-left: 2.5%;background-color: #fdcccc;padding-left: 2%;">
+            <div id="London" class="tabcontent tabcontent0" style="border: #000000 solid 1.1px; border-radius: 3px;width: 100%;border-left:1%;margin-left: 0%;background-color: #190228;padding-left: 2%;color: #ffffff;">
               <!-- London content here -->
               <p>
                 <b>Name</b> : Institute Of Aeronautical Engineering<p>
@@ -729,7 +729,7 @@ html {
           </div>
         
           <div class="center-container peach-box">
-            <div id="Paris" class="tabcontent tabcontent1"  style="border: #000000 solid 1.1px; border-radius: 10px;width: 95%;border-left:1%;margin-left: 2.5%;background-color: #fdcccc;padding-left: 2%;">
+            <div id="Paris" class="tabcontent tabcontent1"  style="border: #000000 solid 1.1px; border-radius: 3px;width: 100%;border-left:1%;background-color: #190228;padding-left: 2%;color: #ffffff;">
               <!-- Paris content here -->
               <p>
                 <b>Name</b> : Sree Chaitanya Jr Kalasala<p>
@@ -742,7 +742,7 @@ html {
           </div>
         
           <div class="center-container peach-box">
-            <div id="Tokyo" class="tabcontent tabcontent2"   style="border: #000000 solid 1.1px; border-radius: 10px;width: 95%;border-left:1%;margin-left: 2.5%;background-color: #fdcccc;padding-left: 2%;">
+            <div id="Tokyo" class="tabcontent tabcontent2"   style="border: #000000 solid 1.1px; border-radius: 3px;width: 100%;border-left:1%;background-color: #190228;padding-left: 2%;color: #ffffff;">
               <!-- Tokyo content here -->
               <p >
                 <b>Name</b> : Geetajali Model High School<p>
@@ -757,7 +757,7 @@ html {
         </div>
 
 
-<div style=" border-radius: 10px;width: 95%;border-left:1%;margin-left: 2.5%;background-color: #ffafaf3b;padding-left: 2%;margin-top: -170px;height: 190px;">
+<div style=" border-radius: 3px;width: 100%;border-left:1%;background-color: #0c0113;;margin-top: -190px;height: 250px;">
   
   </div>
 
@@ -830,7 +830,7 @@ html {
 
 
           
-        <div align="center" style="margin-top: 25px;background-color: rgb(71, 8, 8);color: rgb(255, 255, 255);border-radius: 10px; margin-bottom: 10px; height: 50px;margin-top: 50px;"> <h3 style="padding-top: 15px;">PROJECT'S  AND  CERTIFICATION'S</h3></div>
+        <div align="center" style="margin-top: -50px;background-color: rgb(26, 22, 22);color: rgb(255, 255, 255);border-radius: 0px; margin-bottom: 0px; height: 50px;"> <h3 style="padding-top: 15px;">PROJECT'S  AND  CERTIFICATION'S</h3></div>
           
           
    
@@ -838,22 +838,22 @@ html {
 
 
 
-<div  style="display:flex;justify-content: space-between;  margin-left: 1% ; margin-right: 1%; ">
+<div  style="display:flex;justify-content: space-between;  margin-left: 0% ; margin-right: 0%;background-color: rgb(26, 22, 22);margin-bottom: 3PX; ">
 
 
-  <div class="color-block block1" onmouseover="showPopup(1)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;border-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+  <div class="color-block block1" onmouseover="showPopup(1)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
     <h2 style="font-family:monospace; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">CERTIFICATION IN UDEMY</h2>
   </div>
   
-  <div class="color-block block2" onmouseover="showPopup(2)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;border-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+  <div class="color-block block2" onmouseover="showPopup(2)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
     <h2 style="font-family:monospace; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">DISEASE PREDICTION CHATBOT</h2>
   </div>
   
-  <div class="color-block block3" onmouseover="showPopup(3)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;border-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+  <div class="color-block block3" onmouseover="showPopup(3)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
     <h2 style="font-family:monospace; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">WEATHER APPLICATION </h2>
   </div>
   
-  <div class="color-block block4" onmouseover="showPopup(4)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;border-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+  <div class="color-block block4" onmouseover="showPopup(4)" onmouseout="hidePopup()" style="border: 2px solid #000000; height: 120px; width: 24%; border-radius: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
     <h2 style="font-family:monospace; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">RESPONSIVE WEBPAGE</h2>
   </div>
   
@@ -871,6 +871,7 @@ html {
           <p>
             I have successfully earned Udemy certifications in HTML, Python, CSS, and Django, showcasing my proficiency in web development technologies. These certifications reflect my dedication to acquiring comprehensive skills in front-end and back-end development for building robust and dynamic websites.
           </p>
+          
           
         </div>
     </div>
@@ -895,7 +896,7 @@ html {
 
 
 
-    <div style="background-color: rgba(0, 0, 0, 0.135); width: 98%; height: 280px; margin-top: 0px; border-radius: 0px; border: #00000000 solid .5px; margin-left: 1%; margin-right: 1%; display: flex; align-items: center; justify-content: center;color: #919191;">
+    <div style="background-color: rgb(26, 22, 22); width: 100%; height: 300px; margin-top: -3px; border-radius: 0px; border: #00000000 solid .5px;  display: flex; align-items: center; justify-content: center;color: #919191;border-bottom-left-radius: 20PX;border-bottom-RIGHT-radius:20px ;">
       <h4 >N/A</h4>
   </div>
 
