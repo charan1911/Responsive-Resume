@@ -15,5 +15,5 @@ A simple, responsive resume website built using HTML, CSS, and JavaScript.
 
 
 ## Demo
-[Live Demo](https://your-github-username.github.io/Responsive-Resume)
+[Live Demo](https://charan1911.github.io/Responsive-Resume/)
 
